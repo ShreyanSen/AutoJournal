@@ -8,7 +8,7 @@ Autojournal creates AI smart summaries for your journal entries at a periodicity
 
 In this repo you'll find the scripts I use myself. The categories I use will not be useful to everyone, and I encourage you to create your own prompts and categories by tweaking subquery 3 of the "gen_smart_summary" function of the TimeAgg class found in src/TimeAgg.py.
 
-An example is provided. An llm-generated set of synthetic journal entries for the 23rd century space explorer Battuta serves as an input, found at data/synth_journal, while the processed smart summaries are found at data/synth_journal_smart_summaries. 
+An example is provided. An llm-generated set of synthetic journal entries for the 22rd century space explorer Battuta serves as an input, found at data/synth_journal, while the processed smart summaries are found at data/synth_journal_smart_summaries. 
 
 
 ### Local LLM Requirements
