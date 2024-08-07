@@ -27,4 +27,5 @@ Example run: python gen_synthetic_journal.py
 
 The script backfill_smart_summaries.py reads the journal entries (locally) and generates smart summaries.
 Run "backfill_smart_summaries.py" specifying your input directory, an output directory, a date range, and a temporal bucket size (e.g. monthly) to generate higher level entries. Check the argparse flag descriptions for more details. Autojournal relies on journal entries living in one directory indexed by date in YYYY-MM-DD.md format, just like they are in the example in /data. 
+
 Example run: python backfill_smart_summaries.py -sd 2124-01-01 -ed 2125-01-01 -bfm True
