@@ -26,9 +26,11 @@ https://github.com/ShreyanSen/AutoJournal/blob/main/gen_synthetic_journal.py
 Example run: `python gen_synthetic_journal.py`
 
 The script backfill_smart_summaries.py reads the journal entries (locally) and generates smart summaries.
-Run "backfill_smart_summaries.py" specifying your input directory, an output directory, a date range, and a temporal bucket size (e.g. monthly) to generate higher level entries. Check the argparse flag descriptions for more details. Autojournal relies on journal entries living in one directory indexed by date in YYYY-MM-DD.md format, just like they are in the example in /data.
+Run "backfill_smart_summaries.py" specifying your input directory, an output directory, a date range, and a temporal bucket size (e.g. monthly) to generate higher level entries. Check the argparse flag descriptions for more details. Autojournal relies on journal entries living in one directory indexed by date in YYYY-MM-DD.md format, just like they are in the example in /data. Found here:
 
-Example run: `python backfill_smart_summaries.py -sd 2124-01-01 -ed 2125-01-01 -bfm True`
+https://github.com/ShreyanSen/AutoJournal/blob/main/backfill_smart_summaries.py
+
+Example run: `python backfill_smart_summaries.py -i data/synth_journal/ -o data/synth_journal_smart_summaries/ -sd 2124-01-01 -ed 2125-01-01 -bfm True`
 
 The categories I use to structure smart summaries will not be useful to everyone, and I encourage you to create your own prompts and categories by tweaking subquery 3 of the "gen_smart_summary" function of the TimeAgg class found in src/TimeAgg.py. Found here:
 
